@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(img/wallpaperflare.com_wallpaper.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.567);
+  width: 60%;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(237, 217, 191);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  width: 80%;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.checkboxInput {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(186, 183, 183);
+  padding: 10px;
+  margin: 5px;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.search-form {
+  display: flex;
+  gap: 5px;
+}
+
+.search-form input {
+  padding: 5px;
+}
+
+.search-form input[type="text"] {
+  flex-grow: 2;
+  border-radius: 5px;
+}
+
+.search-form button {
+  flex-grow: 1;
+  border-radius: 5px;
+}
+
+.container-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  margin: 5px;
+  background-color: rgb(51, 180, 191);
+  width: 80%;
+  border-radius: 5px;
+}
+
+.container-harus-dilakukan {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(135, 235, 226);
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(109, 229, 175);
+}
+
+.containerButton {
+  display: flex;
+  gap: 5px;
+}
+
+.container-sudah-dilakukan {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(135, 235, 226);
+}
+
+@media (max-width: 1024px) {
+  /* .input-wrapper header {
+    display: flex;
+    flex-wrap: wrap;
+  } */
+  .form-input {
+    width: 100%;
+  }
+
+  .form-group input[type="text"] {
+    width: 100%;
+  }
+
+  .search-container-kedua {
+    width: 100%;
+  }
+
+  .search-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .search-form input[type="text"] {
+    width: 100%;
+  }
+}

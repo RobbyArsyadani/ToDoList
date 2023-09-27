@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Data Buku</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="input-wrapper" id="add-todo">
+        <header>
+          <h2>Masukkan data Buku</h2>
+        </header>
+        <div class="form-input" id="bagian-form">
+          <form class="form" action="#" id="form">
+            <div class="form-group form-title">
+              <label for="bookName">Judul Buku</label>
+              <input type="text" id="bookName" name="bookName" required />
+            </div>
+            <div class="form-group form-author">
+              <label for="author">Penulis</label>
+              <input type="text" id="author" name="author" required />
+            </div>
+            <div class="form-group form-date">
+              <label for="year">Tahun</label>
+              <input type="number" id="year" name="year" required />
+            </div>
+            <div class="checkboxInput">
+              <label for="selesai">Selesai dibaca</label>
+              <input type="checkbox" id="selesai" name="selesai" />
+            </div>
+            <p></p>
+            <input type="submit" value="Masukkan ke Rak Belum dibaca" name="submit" class="btn-submit" id="submitButton" />
+          </form>
+        </div>
+      </div>
+
+      <div class="search-container">
+        <h2>Cari Buku</h2>
+        <div class="search-container-kedua">
+          <form action="#" class="search-form" id="search-form">
+            <label for="search">Judul</label>
+            <input type="text" id="search" name="search" />
+            <button class="searchButton" id="searchButton">Cari</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="container-list-item">
+        <div class="container-harus-dilakukan">
+          <div class="container-header"><h2>Belum Dibaca</h2></div>
+          <div class="item-list" id="todos"></div>
+        </div>
+
+        <div class="container-sudah-dilakukan">
+          <div class="container-header"><h2>Sudah Dibaca</h2></div>
+          <div class="item-list" id="completed-todos"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
